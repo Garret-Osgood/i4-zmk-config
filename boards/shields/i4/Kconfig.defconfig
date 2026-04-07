@@ -1,0 +1,5 @@
+if SHIELD_I4
+config ZMK_KEYBOARD_NAME
+    default "Inline 4 macro pad"
+
+endif
