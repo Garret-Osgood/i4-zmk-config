@@ -52,10 +52,10 @@
             display-name = "Maco";
 
             bindings = <
-                &kp 
-                &kp copy_macro
-                &kp paste_macro
-                &kp nethack_win_n
+                &none
+                &copy_macro
+                &paste_macro
+                &nethack_win_n
             >;
         };
 
@@ -66,7 +66,7 @@
                 &kp N1
                 &kp N2
                 &kp N3
-                &kp 
+                &none
             >;
         };
     };
