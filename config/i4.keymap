@@ -22,6 +22,16 @@
                 &macro_release &kp LCTRL
             >;
         };
+
+        nethack_win_n: nethack_win_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press &kp LWIN
+                &macro_tap   &kp N
+                &macro_release &kp LWIN
+            >;
+        };
     };
 
     keymap {
@@ -31,10 +41,32 @@
             display-name = "Base";
 
             bindings = <
-                &kp A
-                &kp B
-                &copy_macro
-                &paste_macro
+                &to 1 ESC
+                &kp DELETE
+                &kp BACKSPACE
+                &to 2 SPACE
+            >;
+        };
+
+        macro_layer {
+            display-name = "Maco";
+
+            bindings = <
+                &kp 
+                &kp copy_macro
+                &kp paste_macro
+                &kp nethack_win_n
+            >;
+        };
+
+        num_layer {
+            display-name = "Number";
+
+            bindings = <
+                &kp N1
+                &kp N2
+                &kp N3
+                &kp 
             >;
         };
     };
