@@ -41,10 +41,10 @@
             display-name = "Base";
 
             bindings = <
-                &to 1 ESC
+                &lt 1 ESC
                 &kp DELETE
                 &kp BACKSPACE
-                &to 2 SPACE
+                &lt 2 SPACE
             >;
         };
 
