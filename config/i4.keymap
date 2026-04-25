@@ -49,7 +49,7 @@
         };
 
         macro_layer {
-            display-name = "Maco";
+            display-name = "Macro";
 
             bindings = <
                 &none
